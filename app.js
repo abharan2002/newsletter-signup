@@ -32,10 +32,10 @@ app.post("/", function(req, res) {
 
   var jsonData = JSON.stringify(data);
 
-  const url = "https://us7.api.mailchimp.com/3.0/lists/ae191526ac";
+  const url = "in my hidden repo";
   const options = {
     method: "POST",
-    auth: "abharan:dfdf031a42fe6f25d4fc27683032d312-us7"
+    auth: "abharan:"
   }
 
   const request = https.request(url, options, function(response) {
@@ -66,8 +66,3 @@ app.listen(process.env.PORT || 3000, function() {
   console.log("server is up and running on port 3000");
 });
 
-
-//api key
-// mKHcrA5m9H7JF4BoyjPeJQ
-// list id
-// ae191526ac
